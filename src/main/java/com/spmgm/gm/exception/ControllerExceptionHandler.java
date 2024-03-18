@@ -30,7 +30,7 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(NotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     @ResponseBody
-    public ResponseEntity<String> handleBadRequest(NotFoundException e) {
+    public ResponseEntity<String> handleNotFound(NotFoundException e) {
         log.info("Not found");
         return ResponseEntity.notFound().build();
     }
