@@ -1,0 +1,3 @@
+spring:
+  application.name: gm
+  jpa.hibernate.ddl-auto: create
